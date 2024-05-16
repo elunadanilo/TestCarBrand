@@ -3,6 +3,9 @@ using CarsProject.Domain.Interfaces;
 
 namespace CarsProject.Infrastructure.Services
 {
+    /// <summary>
+    /// Servicio para las marcas de autos.
+    /// </summary>
     public class CarBrandService : ICarBrandService
     {
         #region Private Fields

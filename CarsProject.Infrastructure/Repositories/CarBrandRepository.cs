@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CarsProject.Infrastructure.Repositories
 {
+    /// <summary>
+    /// Repositorio para las marcas de autos.
+    /// </summary>
     public class CarBrandRepository : ICarBrandRepository
     {
         #region Private Fields

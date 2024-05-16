@@ -1,5 +1,8 @@
 ﻿namespace CarsProject.Domain.Interfaces
 {
+    /// <summary>
+    /// Interfaz para el servicio de marcas de autos.
+    /// </summary>
     public interface ICarBrandService
     {
         #region Public Methods

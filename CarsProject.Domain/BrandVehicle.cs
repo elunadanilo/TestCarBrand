@@ -1,5 +1,8 @@
 ﻿namespace CarsProject.Domain
 {
+    /// <summary>
+    /// Representa un vehículo de una marca.
+    /// </summary>
     public class BrandVehicle
     {
         #region Public Properties
