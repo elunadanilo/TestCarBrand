@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres-image
+    build:
+        context: /CarsProject.Infrastructure
+    ports:
+      - "5432:5432"
+    container_name: postgres-container
+    environment:
+      POSTGRES_DB: testCarBrands
+      POSTGRES_USER: danilo
+      POSTGRES_PASSWORD: danilo.
+  myapi:
+    image: api-image  
+    build:
+        context: .
+        dockerfile: CarsProject/Dockerfile
+    ports:
+        - "5434:80"
+    container_name: api-container
+    depends_on:
+        - postgres
