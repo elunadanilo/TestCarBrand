@@ -59,5 +59,13 @@ Asimismo la cobertura de las pruebas unitarias actualmente es del 100%
 ![image](https://github.com/elunadanilo/TestCarBrand/assets/60908456/fd9f4033-d66f-46fb-909e-a532f5d7fec1)
 
 
+## Ejecucion de reporteria
+
+dotnet test --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+
+El archivo generado en este paso debe ser copiado al directorio raiz para posteriormente generar el reporte web
+
+Generacion del reporte Previo a generar el reporte reportgenerator -reports:"{path_to_your_project}\coverage.opencover.xml" -targetdir:"coveragereport" -reporttypes:Html
+
 Contribuciones
 Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor, abre un issue o envía un pull request.
