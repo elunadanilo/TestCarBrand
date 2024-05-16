@@ -29,14 +29,15 @@ Este proyecto es una aplicación backend desarrollada en C# utilizando ASP.NET C
     ```
 
 ## Estructura del Proyecto
+```
 CarsProject.Domain: Contiene las entidades del dominio.
 CarsProject.Infrastructure: Contiene la configuración del contexto de base de datos y los repositorios.
 CarsProject: Contiene el controlador y la configuración de la API.
 TestApplication: Contiene las pruebas unitarias.
-
+```
 ## Dependencias
 Este proyecto utiliza las siguientes librerías:
-
+```
 coverlet.collector
 coverlet.msbuild
 Microsoft.EntityFrameworkCore.Design
@@ -47,7 +48,7 @@ Microsoft.NET.Test.Sdk
 Microsoft.VisualStudio.Azure.Containers.Tools.Targets
 Moq
 Npgsql.EntityFrameworkCore.PostgreSQL
-
+```
 ## Uso
 
 La aplicación expone un endpoint para obtener todas las marcas de autos. Al ejecutar el comando compose, se debera abrir una pantalla similar a:
