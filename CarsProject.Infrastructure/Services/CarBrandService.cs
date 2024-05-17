@@ -38,6 +38,15 @@ namespace CarsProject.Infrastructure.Services
             return await _carBrandRepository.GetBrandVehiclesAsyncRepository();
         }
 
+        /// <summary>
+        /// Servicio para agregar un registro de BrandVehicle.
+        /// </summary>
+        /// <returns>Una tarea que representa la operación de agregado asincrónica</returns>
+        public async Task AddBrandService(BrandVehicle brand)
+        {
+            await _carBrandRepository.AddBrandRepository(brand);
+        }
+
         #endregion Public Methods
     }
 }

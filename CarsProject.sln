@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsProject", "CarsProject\CarsProject.csproj", "{FE49DBE1-0FF6-435F-9F74-14A3E671CA2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsProject", "CarsProject\CarsProject.csproj", "{FE49DBE1-0FF6-435F-9F74-14A3E671CA2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsProject.Domain", "CarsProject.Domain\CarsProject.Domain.csproj", "{8C5CCF6F-130A-4C59-90F0-5798758BE4ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsProject.Domain", "CarsProject.Domain\CarsProject.Domain.csproj", "{8C5CCF6F-130A-4C59-90F0-5798758BE4ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsProject.Infrastructure", "CarsProject.Infrastructure\CarsProject.Infrastructure.csproj", "{433147E9-8F75-4159-B375-D9868E7BD6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarsProject.Infrastructure", "CarsProject.Infrastructure\CarsProject.Infrastructure.csproj", "{433147E9-8F75-4159-B375-D9868E7BD6EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{7460E111-F214-4B91-8A29-45E7DAF81191}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{445E95EE-3E2F-4632-9658-AA5C7E6FEC59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplication", "TestApplication\TestApplication.csproj", "{445E95EE-3E2F-4632-9658-AA5C7E6FEC59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

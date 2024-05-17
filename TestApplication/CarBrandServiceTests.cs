@@ -25,13 +25,13 @@ namespace TestApplication
                 new BrandVehicle { Id = 2, NameBrand = "Ford" }
             };
 
-                mockRepository.Setup(repo => repo.GetBrandVehiclesRepository())
+                mockRepository.Setup(repo => repo.GetBrandVehiclesAsyncRepository())
                               .ReturnsAsync(expectedBrands);
 
                 var service = new CarBrandService(mockRepository.Object);
 
                 // Act
-                var result = await service.GetBrandVehiclesService();
+                var result = await service.GetBrandVehiclesAsyncService();
 
                 // Assert
                 Assert.NotNull(result);

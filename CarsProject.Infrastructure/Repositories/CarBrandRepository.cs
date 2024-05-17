@@ -1,4 +1,5 @@
 ﻿using CarsProject.Domain;
+using CarsProject.Domain.Exceptions;
 using CarsProject.Domain.Interfaces;
 using CarsProject.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
@@ -39,6 +40,24 @@ namespace CarsProject.Infrastructure.Repositories
         {
             var listado = await _projectDbContext.BrandVehicle.ToListAsync();
             return listado;
+        }
+
+        /// <summary>
+        /// Agrega un registro de BrandVehicle.
+        /// </summary>
+        /// <returns>Una tarea que representa la operación de agregado asincrónica</returns>
+        public async Task AddBrandRepository(BrandVehicle brand)
+        {
+            try
+            {
+                _projectDbContext.Add(brand);
+                await _projectDbContext.SaveChangesAsync();
+            }
+            catch (Exception exc)
+            {
+
+                throw new BusinessException("Error al grabar encabezado de encuesta" + exc);
+            }
         }
 
         #endregion Public Methods
