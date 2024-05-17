@@ -3,6 +3,7 @@ using CarsProject.Domain;
 using CarsProject.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
+using AutoMapper;
 
 namespace TestApplication
 {
@@ -19,6 +20,7 @@ namespace TestApplication
             // Arrange
             // Crear un mock de ICarBrandService. Un mock simula el comportamiento de objetos reales en un entorno controlado.
             var mockService = new Mock<ICarBrandService>();
+            var mockMapper = new Mock<IMapper>();
             // Lista esperada de marcas de vehículos para simular una respuesta del servicio.
             var expectedBrands = new List<BrandVehicle>
             {
@@ -32,7 +34,7 @@ namespace TestApplication
                        .ReturnsAsync(expectedBrands);
 
             // Crear una instancia del controlador, pasando el objeto mock como dependencia.
-            var controller = new BrandVehicleController(mockService.Object);
+            var controller = new BrandVehicleController(mockService.Object, mockMapper.Object);
 
             // Act
             // Llamar al método del controlador para obtener las marcas.
